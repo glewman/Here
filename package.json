@@ -1,7 +1,7 @@
 {
   "name": "savvy-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Overview",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -19,7 +19,16 @@
     "stylelint-vscode": "^7.0.0-6"
   },
   "dependencies": {
+    "mongoose": "^5.13.5",
     "node": "^15.8.0",
-    "yargs-parser": ">=13.1.2"    
-  }
+    "yargs-parser": ">=13.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glewman/Here.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glewman/Here/issues"
+  },
+  "homepage": "https://github.com/glewman/Here#readme"
 }
