@@ -8,6 +8,7 @@ const usersSchema = new Schema({
   phoneNumber: String,
   contacts: {
     name: String,
+    id: String,
     phoneNumber: String
   }
 });
