@@ -3,14 +3,17 @@ const Schema = mongoose.Schema;
 //create schema and model
 
 const usersSchema = new Schema({
-  name: String,
-  id: String,
-  phoneNumber: String,
+  userName: String,
+  userId: String,
+  userPhoneNumber: String,
   contacts: {
-    name: String,
-    id: String,
-    phoneNumber: String
-  }
+    contactName: String,
+    contactId: String,
+    contactPhoneNumber: String
+  },
+  importDate: String,
+  updateDate: String,
+  uploadId: String
 });
 
 const users = mongoose.model("usersCollection", usersSchema);

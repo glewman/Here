@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 //create schema and model
 
 const contactsSchema = new Schema({
-  name: String,
-  id: String,
-  phoneNumber: String,
+  contactName: String,
+  contactId: String,
+  contactPhoneNumber: String,
   isContact: Boolean
 });
 
