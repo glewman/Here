@@ -11,6 +11,6 @@ const locationSchema = new Schema({
   locationAddress: String
 });
 
-const location = mongoose.model("contactsCollection", contactsSchema);
+const location = mongoose.model("locationCollection", locationSchema);
 
-module.exports.contacts;
+module.exports.location;
