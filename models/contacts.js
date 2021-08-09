@@ -11,4 +11,7 @@ const contactsSchema = new Schema({
 
 const contacts = mongoose.model("contactsCollection", contactsSchema);
 
-module.exports.contacts;
+module.exports = {
+  model: contacts,
+  schema: contactsSchema
+};

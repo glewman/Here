@@ -1,13 +1,16 @@
 const mongoose = require("mongoose");
-
 //connect to  mongodb
-mongoose.connect("mongodb://localhost/Here-database");
+// eslint-disable-next-line no-undef
+before(function(done) {
+  mongoose.connect("mongodb://localhost/Here-database");
 
-mongoose.connection
-  .once("open", function() {
-    console.log("Connection successful");
-  })
-  .on("error", function() {
-    // eslint-disable-next-line no-undef
-    console.log("connection error:", error);
-  });
+  mongoose.connection
+    .once("open", function() {
+      console.log("Connection successful");
+      done();
+    })
+    .on("error", function() {
+      // eslint-disable-next-line no-undef
+      console.log("connection error:", error);
+    });
+});

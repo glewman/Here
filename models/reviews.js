@@ -14,4 +14,7 @@ const reviewsSchema = new Schema({
 
 const reviews = mongoose.model("reviewsCollection", reviewsSchema);
 
-module.exports.reviews;
+module.exports = {
+  model: reviews,
+  schema: reviewsSchema
+};
