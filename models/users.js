@@ -16,7 +16,7 @@ const usersSchema = new Schema({
   uploadId: String
 });
 
-const users = mongoose.model("usersCollection", usersSchema);
+const users = mongoose.model("users", usersSchema);
 
 module.exports = {
   model: users,

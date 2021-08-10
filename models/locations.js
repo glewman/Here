@@ -11,7 +11,7 @@ const locationsSchema = new Schema({
   locationAddress: String
 });
 
-const locations = mongoose.model("locationsCollection", locationsSchema);
+const locations = mongoose.model("locations", locationsSchema);
 
 module.exports = {
   model: locations,

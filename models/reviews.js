@@ -12,7 +12,7 @@ const reviewsSchema = new Schema({
   reviewComments: String
 });
 
-const reviews = mongoose.model("reviewsCollection", reviewsSchema);
+const reviews = mongoose.model("reviews", reviewsSchema);
 
 module.exports = {
   model: reviews,

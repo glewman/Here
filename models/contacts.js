@@ -9,7 +9,7 @@ const contactsSchema = new Schema({
   isContact: Boolean
 });
 
-const contacts = mongoose.model("contactsCollection", contactsSchema);
+const contacts = mongoose.model("contacts", contactsSchema);
 
 module.exports = {
   model: contacts,
